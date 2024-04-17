@@ -25,7 +25,7 @@ h1
   padding: 80px; /* some padding */
   text-align: center; /* center the text */
   background: lightblue; /* blue background */
-  color: darkblue; /* white text color */
+  color: darkblue; /*  text color */
 
 }
 .header {
@@ -34,21 +34,14 @@ h1
   background: lightblue; /* blue background */
   color: white; /* white text color */
 }
-
-
 p
 {
 font-family: sans-serif;
 text-align:center;
-
-
 }
-
-
 button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
-
 }
 
 #lapList {
