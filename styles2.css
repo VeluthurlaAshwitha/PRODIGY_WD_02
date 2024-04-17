@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  color:black
+}
+
+.stopwatch {
+text-align:center;
+margin-top:100px;
+color:lightblue
+}
+
+#display {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+h1 
+{
+  padding: 80px; /* some padding */
+  text-align: center; /* center the text */
+  background: lightblue; /* blue background */
+  color: darkblue; /* white text color */
+
+}
+.header {
+  padding: 80px; /* some padding */
+  text-align: center; /* center the text */
+  background: lightblue; /* blue background */
+  color: white; /* white text color */
+}
+
+
+p
+{
+font-family: sans-serif;
+text-align:center;
+
+
+}
+
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+
+}
+
+#lapList {
+  list-style-type: none;
+  padding: 0;
+}
