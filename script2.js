@@ -37,9 +37,17 @@ function lapTimer() {
   const lapTime = elapsedTime;
   laps.push(lapTime);
   const lapItem = document.createElement('li');
-  lapItem.innerText = laps.length + '. ' + printTime(lapTime);
+  lapItem.innerText = laps.length + '. ' + formatTime(lapTime);
   document.getElementById('lapList').appendChild(lapItem);
 }
+
+function formatTime(time) {
+  const minutes = Math.floor(time / 60000);
+  const seconds = Math.floor((time % 60000) / 1000);
+  const milliseconds = Math.floor((time % 1000) / 10);
+  return `${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}:${milliseconds < 10 ? '0' : ''}${milliseconds}`;
+}
+
 
 document.getElementById('startBtn').addEventListener('click', function () {
   startTimer();
